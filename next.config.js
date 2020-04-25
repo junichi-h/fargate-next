@@ -9,7 +9,8 @@ const nextConfig = {
   exportTrailingSlash: true,
   exportPathMap: async () => {
     const paths = {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/example': { page: '/example'}
     };
 
     return paths;

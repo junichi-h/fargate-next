@@ -1,18 +1,18 @@
 /** @jsx jsx */
-import { css, jsx } from '@emotion/core';
+import { jsx, css } from '@emotion/core';
 import Link from 'next/link'
 import {
   FC
 } from 'react';
 
-import TitleWrapper from '../components/molecules/title-wrapper';
+import TitleWrapper from '../../components/molecules/title-wrapper';
 
 type TProps = {};
 
-const TopPage: FC<TProps> = () => {
+const ExamplePage: FC<TProps> = () => {
   return (
     <div>
-      <TitleWrapper text="TOP" />
+      <TitleWrapper text="Example" />
       <div
         css={css`
           position: absolute;
@@ -21,12 +21,12 @@ const TopPage: FC<TProps> = () => {
           transform: translate3d(-60%, -50%, 0);
         `}
       >
-        <Link href='/example'>
-          <a>Example</a>
+        <Link href='/'>
+          <a>top</a>
         </Link>
       </div>
     </div>
   );
 };
 
-export default TopPage;
+export default ExamplePage;
